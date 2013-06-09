@@ -1,8 +1,10 @@
 <%= render :partial => 'forem/forums/head', :locals => { :forum => @topic.forum } %>
 
-<h2><%= t("forem.post.edit") %></h2>
+<h4 class="s-centered s-padding-bottom s-font">Edit Post</h4>
 
+<center>
 <%= simple_form_for [forem, @topic, @post] do |f| %>
   <%= render :partial => "form", :locals => { :f => f } %>
-  <%= f.submit t("forem.post.buttons.edit") %>
+  <%= f.submit t("forem.post.buttons.edit"), :class => 'btn s-btn-red', :style => 'margin-top:20px;' %>
 <% end %>
+</center>

@@ -5,11 +5,31 @@ body {padding:0px;background: #e2e2e2;font-family:trend_sans_oneregular;}
 // Fonts
 @font-face {font-family: 'trend_sans_oneregular'; src: url('TrendSans-One-webfont.eot'); src: url('TrendSans-One-webfont.eot?#iefix') format('embedded-opentype'), url('TrendSans-One-webfont.woff') format('woff'), url('TrendSans-One-webfont.ttf') format('truetype'), url('TrendSans-One-webfont.svg#trend_sans_oneregular') format('svg'); font-weight: normal; font-style: normal; }
 
+// Header
+.brand {text-align:center;margin:0 auto;}
+.brand img {max-width:250px;margin:10px auto 0px auto;}
+#nav-container {text-align:center;margin-top:6px;}
+
+// Forums
+#forum-container {background:#ffffff;padding:40px 30px;}
+th {padding-right:10px;}
+input {margin-bottom:10px!important;}
+input[type="text"] {min-width:80%;}
+textarea {min-width:80%;height:200px;}
+.last_post, .started-by, .latest-post, .post-time {font-size:11px;letter-spacing:-1px;}
+#forum_topic_links {padding-left:20px;}
+.description p {font-size:12px;letter-spacing:-1px;}
+.forum, .topic {border-top:1px solid #eaeaea;}
+.post {margin-top:20px;}
+.reply_to_post {margin-top:0px;}
+.contents p {margin:10px auto;padding:10px 0px;background:#f6f6f6;width:80%;-webkit-border-radius: 5px!important;border-radius: 5px!important;}
+
 // Twitter Bootstrap Modifications
+abbr {display:none;}
 h1, h2, h3, h4, h5, h6 {color:#3c3d42;font-family:trend_sans_oneregular;font-weight:normal;letter-spacing:-1px;margin:0px;padding:0px;}
 p {font-size:14px;color:#3c3d42;font-family:trend_sans_oneregular;font-weight:normal;letter-spacing:-1px;margin:0px}
 ul {list-style-type:none;}
-a {color:#da4e49}
+a {color:#da4e49;letter-spacing:-1px;text-transform:uppercase}
 .table td {border:none;}
 .alert-danger, .alert-error {margin:0px;padding:0px;font-size:12px;background-color: transparent;border:none;color: #d04545;}
 .help-inline {display:block;color: #d04545!important;font-size:12px;padding-top:5px;}
@@ -28,6 +48,7 @@ hr {margin:5px 0px;}
 .btn-group #connectYes {margin-right:2px;}
 .btn-group .active {background:#3c3d42!important;-webkit-box-shadow: 0px 3px 0px 0px #3c3d42;
 box-shadow: 0px 3px 0px 0px #3c3d42;}
+form {margin-bottom:5px;}
 
 // Servant Styles
 .s-btn-red {
@@ -42,6 +63,7 @@ box-shadow: 0px 3px 0px 0px #3c3d42;}
   -webkit-box-shadow: 0px 3px 0px 0px #9f3333;
   box-shadow: 0px 3px 0px 0px #9f3333;
   letter-spacing:-1px!important;
+  text-transform:uppercase;
 }
 .s-btn-red-small {
   font-family:trend_sans_oneregular;
@@ -55,6 +77,7 @@ box-shadow: 0px 3px 0px 0px #3c3d42;}
   -webkit-box-shadow: 0px 3px 0px 0px #9f3333;
   box-shadow: 0px 3px 0px 0px #9f3333;
   letter-spacing:-1px!important;
+  text-transform:uppercase;
 }
 .s-btn-red:hover, .s-btn-red-small:hover {background: #e24a4a;}
 .s-btn-black {
@@ -99,8 +122,8 @@ box-shadow: 0px 3px 0px 0px #3c3d42;}
 .s-icon {margin:0px 5px;}
 .s-font {font-family:trend_sans_oneregular!important;text-transform:uppercase;font-weight:normal!important;letter-spacing:-1px!important;}
 .s-twelve {font-size:12px!important;}
-.s-eleven {font-size:11px;}
-.s-ten {font-size:10px;}
+.s-eleven {font-size:11px!important;}
+.s-ten {font-size:10px!important;}
 .s-helvetica {font-family:helvetica}
 .s-link {color:#de5757;font-weight:400;letter-spacing:-1px;}
 .s-link:hover {color:#ff7c7c;text-decoration:none;}

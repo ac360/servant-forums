@@ -1,13 +1,15 @@
-<table id='forums' class='forums subdued' cellspacing='0'>
-  <thead>
-  <tr>
-    <th class="desc-and-last-post"><%= t('forum', :scope => 'forem.general') %></th>
-    <th class="topics-count"><%= t('topics', :scope => 'forem.general') %></th>
-    <th class="posts-count"><%= t('posts', :scope => 'forem.general') %></th>
-    <th class="views-count"><%= t('forem.forums.index.views') %></th>
-  </tr>
-  </thead>
-  <tbody>
-    <%= render category.forums %>
-  </tbody>
-</table>
+<div class="row-fluid">
+  <table id='forums' class='table forums subdued span12' cellspacing='0'>
+    <thead>
+    <tr>
+      <th class="desc-and-last-post"></th>
+      <th class="s-ten topics-count s-font"><%= t('topics', :scope => 'forem.general') %></th>
+      <th class="s-ten posts-count s-font"><%= t('posts', :scope => 'forem.general') %></th>
+      <th class="s-ten views-count s-font"><%= t('forem.forums.index.views') %></th>
+    </tr>
+    </thead>
+    <tbody>
+      <%= render category.forums %>
+    </tbody>
+  </table>
+</div>

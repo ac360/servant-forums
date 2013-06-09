@@ -64,6 +64,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    forem-gfm_formatter (1.0.0)
+      forem
+      redcarpet (~> 2.0.1)
     friendly_id (4.0.9)
     gemoji (1.1.2)
     gli (2.5.6)
@@ -118,6 +121,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    redcarpet (2.0.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     sass (3.2.9)
@@ -155,6 +159,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   forem!
+  forem-gfm_formatter
   jquery-rails
   kaminari (= 0.13.0)
   pg

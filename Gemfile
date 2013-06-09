@@ -25,6 +25,7 @@ gem 'devise'
 gem 'forem', :git => 'git://github.com/radar/forem.git'
 gem 'kaminari', '0.13.0'
 gem 'bootstrap-sass', '~> 2.3.1.3'
+gem 'forem-gfm_formatter'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

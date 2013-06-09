@@ -1,22 +1,28 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h4 class="s-centered">Edit User</h4>
+<hr style="width:60%;margin:10px auto;">
 
+<center>
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="inputs">
+  <div class="inputs" style="max-width:300px;margin:15px auto 0px auto;">
+    <%= f.input :username, :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
-    <%= f.input :password, :hint => "leave it blank if you don't want to change it", :required => false %>
-    <%= f.input :password_confirmation, :required => false %>
-    <%= f.input :current_password, :hint => "we need your current password to confirm your changes", :required => true %>
+    <%= f.input :password, :required => false %>
+    <p class="s-ten s-font s-centered s-grey s-padding-bottom">Leave it blank if you don't want to change it.</p>
+    <%= f.input :current_password, :required => true %>
+    <p class="s-ten s-font s-centered s-grey s-padding-bottom">we need your current password to confirm your changes</p>
   </div>
 
-  <div class="actions">
-    <%= f.button :submit, "Update" %>
+  <div class="actions" style="margin-top:10px;">
+    <%= f.button :submit, "Update", :class => 'btn s-btn-red' %>
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
 
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
+<p class="s-eleven s-font">Unhappy?<br/> <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
 
-<%= link_to "Back", :back %>
+<br/>
+<%= link_to "Go Back", :back %>
+
+</center>
