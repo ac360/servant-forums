@@ -64,6 +64,5 @@ module ServantForum
     config.assets.initialize_on_precompile = false
 
     # MOnkey Patch for Forem Asset Precomiple Error
-    routes.named_routes[:forem] 
   end
 end
